@@ -1,0 +1,40 @@
+#nicknamePopup {
+  padding: 2rem;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+#nicknamePopup::backdrop { background: rgba(0, 0, 0, 0.6); }
+
+#nicknameInput {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.waiting-lobby { text-align: center; }
+.lobby-status { font-size: 1.2rem; margin: 16px 0; }
+
+.host-controls { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-bottom: 20px; }
+
+.player-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.player-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.player-card.is-me { background: white; color: #46178f; }

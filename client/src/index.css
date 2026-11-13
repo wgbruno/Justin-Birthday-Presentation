@@ -1,0 +1,28 @@
+:root {
+  font: 18px/1.4 system-ui, "Segoe UI", Roboto, sans-serif;
+  color: #1f1b2e;
+  color-scheme: light; /* stops phones in dark mode from changing colors */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #46178f, #7b2ff7);
+}
+
+#root { min-height: 100svh; }
+
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { line-height: 1.2; } /* this is the overlap fix */
+h1 { font-size: clamp(1.6rem, 5vw, 2.8rem); }
+
+button {
+  font: inherit;
+  font-weight: 700;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
