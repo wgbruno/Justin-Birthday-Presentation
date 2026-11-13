@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { socket } from "../socket";
+import { QRCodeSVG } from "qrcode.react";
 import "../styling/home.css";
 
 function Home() {
@@ -109,6 +110,10 @@ function Home() {
           <div className="waiting-lobby">
             {isHost ? (
               <div className="host-controls">
+                <div className="qr-box">
+                  <QRCodeSVG value={window.location.origin} size={220} />
+                  <p>Scan to join!</p>
+                </div>
                 <p className="lobby-status">
                   You are the host (<strong>{player.nickname}</strong>)!
                 </p>
